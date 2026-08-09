@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telusko.springbootgradleapp.SpringBootGradleAppApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-08-05T18:14:26.692Z" hostname="SHLOK-LAPTOP" time="2.077">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.telusko.springbootgradleapp.SpringBootGradleAppApplicationTests" time="0.573"/>
+  <system-out><![CDATA[23:44:26.865 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.telusko.springbootgradleapp.SpringBootGradleAppApplicationTests]: SpringBootGradleAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:44:26.947 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.telusko.springbootgradleapp.SpringBootGradleAppApplication for test class com.telusko.springbootgradleapp.SpringBootGradleAppApplicationTests
+23:44:27.024 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.telusko.springbootgradleapp.SpringBootGradleAppApplicationTests]: SpringBootGradleAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:44:27.026 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.telusko.springbootgradleapp.SpringBootGradleAppApplication for test class com.telusko.springbootgradleapp.SpringBootGradleAppApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-08-05T23:44:27.320+05:30  INFO 18240 --- [SpringBootGradleApp] [    Test worker] .t.s.SpringBootGradleAppApplicationTests : Starting SpringBootGradleAppApplicationTests using Java 17.0.20 with PID 18240 (started by Lenovo in D:\Gradle Projects\SpringBootGradleApp)
+2026-08-05T23:44:27.328+05:30  INFO 18240 --- [SpringBootGradleApp] [    Test worker] .t.s.SpringBootGradleAppApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T23:44:28.179+05:30  INFO 18240 --- [SpringBootGradleApp] [    Test worker] .t.s.SpringBootGradleAppApplicationTests : Started SpringBootGradleAppApplicationTests in 1.121 seconds (process running for 2.18)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
