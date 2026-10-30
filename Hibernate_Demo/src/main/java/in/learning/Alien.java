@@ -1,10 +1,12 @@
 package in.learning;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 public class Alien {
     private String name;
+    @Id
     private int id;
     private String tech;
 

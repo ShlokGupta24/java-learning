@@ -2,6 +2,7 @@ package in.learning;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -10,9 +11,9 @@ public class Main {
     public static void main(String[] args) {
         //Setting the value of first object
         Alien a1=new Alien();
-        a1.setId(101);
-        a1.setName("Shlok");
-        a1.setTech("Java");
+        a1.setId(102);
+        a1.setName("Rshul");
+        a1.setTech("Python");
 
         //Now we want Hibernate ORM add or save these details in DB
 
@@ -24,7 +25,15 @@ public class Main {
         SessionFactory factory=config.buildSessionFactory();
         //We need a session in Hibernate to perform an operation like saving, deleting, adding or updating.
         Session session=factory.openSession();
+        //We need Transaction to commit the changes or task perform that we have done using hibernate, in this case, is adding a1 data to DB.
+        Transaction transaction= session.beginTransaction();
+
         //We have hibernate.cfg.xml file in resources folder to connect hibernate with the DB to perform operation in DB.
-        session.persist(a1);
+        session.persist(a1); //Adding or persisting a1 to save on DB
+        transaction.commit();//Commit the save on DB using transaction. It is very imp to commit after all the update.
+
+        session.close();
+        factory.close();
+        //All the above code is all about storing the data in the Database using the object Alien in this case and Hibernate.
     }
 }
